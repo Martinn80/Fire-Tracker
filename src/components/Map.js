@@ -1,4 +1,6 @@
-import GoogleMapReact from 'google-map-react';
+import GoogleMapReact from 'google-map-react'
+
+import LocationMarker from './LocationMarker'
 
 require('dotenv').config();
 
@@ -11,6 +13,7 @@ const Map = ({ center, zoom }) => {
                 defaultCenter={ center }
                 defaultZoom={ zoom }
             >
+                <LocationMarker lat={center.lat} lng={center.lng} />
             </GoogleMapReact>
         </div>
     )
@@ -21,7 +24,7 @@ Map.defaultProps = {
         lat: 38.438332, 
         lng: -121.381943
     },
-    zoom: 6
+    zoom: 8
 }
 
 export default Map
