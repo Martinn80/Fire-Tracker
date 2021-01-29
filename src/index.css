@@ -8,6 +8,8 @@ body {
   padding: 10px;
   background-color: #0B3D91;
   color: #fff;
+  border-style: outset;
+  border-color: #fc3d21;
   position: fixed;
   top: 0;
   right: 0;
@@ -25,6 +27,8 @@ body {
 .footer {
   padding: 10px;
   background-color: #0B3D91;
+  border-style: outset;
+  border-color: #fc3d21;
   color: #fff;
   position: fixed;
   bottom: 0;
